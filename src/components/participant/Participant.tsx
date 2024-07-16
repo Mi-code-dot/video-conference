@@ -2,7 +2,7 @@ import React from 'react';
 import MicNoneOutlinedIcon from '@mui/icons-material/MicNoneOutlined';
 import MicOffOutlinedIcon from '@mui/icons-material/MicOffOutlined';
 import { ParticipantType } from '../../types/participant.model';
-import { Roles as Roles } from '../../types/role.enun';
+import { Roles } from '../../types/role.enun';
 import mojLogo from '../../images/ministry_of_justice_logo.png';
 import './Participant.css';
 
@@ -38,7 +38,7 @@ const Participant = ({ participant, toggleMute }: ParticipantProps) => {
           <div>{participant.role + ' ' + participant.name}</div>
         </div>
 
-        {participant.role === Roles.Judge && <img className="logo" src={mojLogo}></img>}        
+        {participant.role === Roles.Judge && <img className="logo" src={mojLogo} alt='logo'></img>}        
       </div>
 
     </div>

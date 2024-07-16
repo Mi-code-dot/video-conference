@@ -3,8 +3,8 @@ import Participant from '../participant/Participant';
 import ControlPanel from '../control-panel/ControlPanel';
 import Sidebar from '../side-bar/SideBar';
 import person1 from '../../images/person1.jpg';
-import person4 from '../../images/person4.png';
 import person3 from '../../images/person3.png';
+import person4 from '../../images/person4.jpg';
 import person6 from '../../images/person6.jpg';
 import './VideoConference.css';
 import { Roles } from '../../types/role.enun';
@@ -19,11 +19,11 @@ interface VideoConferenceProps {
 const VideoConference = ({videoConferenceId} : VideoConferenceProps) => {
   const [timeElapsed, setTimeElapsed] = useState(0);
   const [participants, setParticipants] = useState<ParticipantType[]>([
-      { id: 1, name: 'שלמה הראל', role: Roles.Judge, party: Parties.speaking, isMuted: false, imgUrl: person1 },
+      // { id: 1, name: 'שלמה הראל', role: Roles.Judge, party: Parties.speaking, isMuted: false, imgUrl: person1 },
       { id: 2, name: 'אסף גדות', role: Roles.Lawyer, party: Parties.responding, isMuted: true, imgUrl: person6 },
       { id: 3, name: 'יעל חלימה', role: Roles.Lawyer, party: Parties.provoked, isMuted: false, imgUrl: person3 },
-      { id: 4, name: 'גל קרני', role: Roles.Judge, party: Parties.speaking, isMuted: true, imgUrl: person4 },
-      { id: 5, name: 'בועז שור', role: Roles.Lawyer, party: Parties.provoked, isMuted: true, imgUrl: 'https://fastly.picsum.photos/id/6/5000/3333.jpg?hmac=pq9FRpg2xkAQ7J9JTrBtyFcp9-qvlu8ycAi7bUHlL7I' },
+      { id: 4, name: 'דן קרני', role: Roles.Judge, party: Parties.speaking, isMuted: true, imgUrl: person4 },
+      // { id: 5, name: 'בועז שור', role: Roles.Lawyer, party: Parties.provoked, isMuted: true, imgUrl: 'https://fastly.picsum.photos/id/6/5000/3333.jpg?hmac=pq9FRpg2xkAQ7J9JTrBtyFcp9-qvlu8ycAi7bUHlL7I' },
   ]);
 
   useEffect(() => {
