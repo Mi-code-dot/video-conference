@@ -15,7 +15,7 @@ interface ParticipantProps {
 const Participant = ({ participant, toggleMute }: ParticipantProps) => {
   const participantClass = participant.role === Roles.Judge ? ` participant judge` : `participant lawyer`// ${participant.isMe ? 'me' : '
 
-  // --- general function that retrieve currnet user id
+  // --- general function that retrieve currnet user
   const getMyId = () => {
     return 3;
   }
@@ -38,8 +38,8 @@ const Participant = ({ participant, toggleMute }: ParticipantProps) => {
           <div>{participant.role + ' ' + participant.name}</div>
         </div>
 
+        {participant.role === Roles.Judge && <img className="logo" src={mojLogo}></img>}        
       </div>
-      {participant.role === Roles.Judge && <img className="logo" src={mojLogo}></img>}
 
     </div>
   );
