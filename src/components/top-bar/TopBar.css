@@ -1,0 +1,43 @@
+
+.topBar{
+   display: flex;
+   justify-content: space-between;
+   color: white; 
+   position: absolute;
+   margin-top: 15px;
+   width: 100%;
+}
+
+.conference-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    right: 150px;
+    position: absolute;
+    align-items: end;
+}
+
+.conferene-setting {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    position: absolute;
+    left: 20px;
+}
+
+.resize-screen {
+    cursor: pointer;
+}
+
+.recording{
+    display: flex;
+    align-items: baseline;
+    gap: 3px;
+    font-size: 13px;
+}
+.red-circle {
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+}

@@ -1,0 +1,46 @@
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  .buttons-wrapper {
+    display: flex;
+    gap: 15px;
+  }
+
+  .controls button {
+    display: flex;
+    align-items: center;
+    background: #334556;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 10px 3px 10px;
+    gap: 5px;
+  }
+  
+  .live-indicator {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+    font-size: 13px;
+  }
+
+  .live-btn {
+    background-color: red;
+    padding: 2px 8px 2px 8px;
+    border-radius: 5px;
+  }
+  
+  .timer {
+    margin-left: 5px;
+  }
+  

@@ -1,0 +1,80 @@
+  .participant {
+    position: relative;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .participant-image{
+    width: 100%;
+    /* height: auto; */
+    /* object-fit: cover; */
+    object-fit: contain;
+
+  }
+  
+  .participant-tag {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: white;
+    padding: 2px 8px 2px 8px;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .me{
+    background-color: rgb(8, 133, 208);
+  }
+
+  .participant-controler {
+    position: absolute;
+    bottom: 0;
+    background: rgba(51,69,86, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    height: 35px;
+    border-radius: 8px;
+  }
+
+  .participant-details {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+    font-size: 13px;
+    align-items: end;
+  }
+  
+  .mute-icon {
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .judge {
+    max-height: 300px;
+    max-width: 500px;
+    flex: 1 1 45%;
+  }
+  
+  .lawyer {
+    max-width: 330px;
+    max-height: 200px;
+    flex: 1 1 25% ;
+  }
+  
+  .participantBottom {
+    display: flex;
+    
+  }
+  
+  .logo{
+    width: 26px;
+    margin-right: 14px;
+  }
+  
